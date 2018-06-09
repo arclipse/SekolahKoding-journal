@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar CSS 3</title>
+
+        <style>
+            #box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #box2 {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border-radius: 50%;
+            }
+            #box3 {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                /* box-shadow: horizontal vertical blur spread color; */
+                box-shadow: 5px 10px 15px 5px black;
+            }
+            #box4 {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                padding: 10px;
+                border: 5px solid black;
+                /* box sizing buat ngubah cara menghitung jumlah total size.
+                karena size suatu elemen itu ada width, height, padding, border, dan margin
+                (dan mungkin ada yng lain). nah di sini menggunakan border-box agar jumlah total
+                size nya mengikuti width dan height, sehingga padding dan border tidak membesar
+                ke luar, tapi ke dalam, yang artinya memperkecil ruang untuk elemen. */
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+            }
+            #box5 {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Border Radius</h1>
+        <div id="box"></div>
+        <div id="box2"></div>
+
+        <h1>Box Shadow</h1>
+        <div id="box3"></div>
+
+        <h1>Box Sizing</h1>
+        <div id="box4"></div>
+        <div id="box5"></div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS 3</title>
+
+    <style>
+      div {
+        height: 100px; width: 100px; background-color: blue; margin: 5px;
+        /* deklarasi transition berada di selectornya, bukan pada pseudonya (misal div:hover) */
+        transition: width 1s, background 1s, height 1s;
+      }
+      #div1:hover {
+        width: 200px;
+      }
+      #div2:hover {
+        transition-delay: 2s;
+        background-color: red;
+      }
+      #div3:hover {
+        transition-timing-function: ease-in-out;
+        background-color: red;
+        height: 200px;
+      }
+      #div4:hover {
+        transition-timing-function: linear;
+        background-color: red;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transition</h1>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+  </body>
+</html>

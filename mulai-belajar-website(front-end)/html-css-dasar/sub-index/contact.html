@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact - Arclipse Art</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <p>paragraf atas</p>
+        <!--Menu-->
+        <div>
+            <a href="../index.html">Home</a>
+            <span><a href="job.html">Job</a></span>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <a href="#">Terms</a>
+        </div>
+        
+        <p>paragraf tengah</p>
+        <!-- Bagian awal/atas, berisi tag heading -->
+        <div>
+            <h1>Arclipse Art</h1>
+            <h2>&nbsp;Independent Photographer, <span>Designer, Content Creator</span></h2>
+        </div>
+
+        <!--Membuat form-->
+        <form action="GET">
+            <fieldset>
+                <legend>Name and Message</legend>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" id="username">
+                <br>
+                <label for="message">Message</label>
+                <textarea name="ArclipseArt" id="ArclipseArt" cols="30" rows="10" id="message"></textarea>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Checklist</legend>
+                <label for="">Hobby</label><br>
+                <input type="checkbox" name="hobby" value="0" checked>Games
+                <input type="checkbox" name="hobby" value="1">Design
+                <input type="checkbox" name="hobby" value="2">Lead
+                <br>
+                <label for="">Gender</label><br>
+                <input type="radio" name="gender" value="0" checked>Male
+                <input type="radio" name="gender" value="1">Female
+                <br>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Request</legend>
+                <label>Job Request</label><br>
+                <select name="" id="">
+                    <optgroup label="Inside">
+                        <option value="design">Design</option>
+                        <option value="code">Code</option>
+                    </optgroup>
+                    <optgroup label="Outside">
+                        <option value="photo">Photograph</option>
+                        <option value="art">Art</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Send">
+        </form>
+
+        
+
+        <p>&copy; ArclipseArt 2018</p>
+    </body>
+</html>

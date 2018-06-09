@@ -1,0 +1,237 @@
+/* color:
+    coklat: #54494b;
+    putih: #f1f7ed;
+    taro: #978897;
+    abu: #494850;
+    hitam: #2c2c34;
+*/
+
+/* * {
+    margin: 0;
+} */
+
+body {
+
+    /*
+    background-color: #dfdfdf;
+    background-image: url("images/jeremy-vessey-328757-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    */
+
+    background: url("images/erda-estremera-582075-unsplash.jpg") fixed center;
+    background-size: cover;
+    /* opacity: 0.2; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #54494b;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #2c2c34;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline;
+}
+
+#text_lorem {
+    color: #978897;
+    text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 40px;
+}
+
+#text_font {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1f7ed;
+    background-color: #2c2c34;
+    width: 50%;
+    height: 200px;
+    max-width: 30%;
+    max-height: 100px;
+    visibility: hidden;
+    display: none;
+}
+
+#main_nav {
+    /* margin: top right bottom left;
+    margin: top&bottom left&right;
+    margin: top left&right bottom; */
+    margin: 10px 0 50px 0;
+}
+
+.menu {
+    color: #f1f7ed;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    /* width: 100px;
+    height: 30px; */
+
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: #978897; */
+
+    border: 3px solid #978897;
+    padding: 10px;
+}
+
+.menu:link {
+    color: #2c2c34;
+    background-color: #f1f7ed;
+}
+
+.menu:visited {
+    background-color: #54494b;
+}
+
+.menu:hover {
+    background-color: #494850;
+}
+
+.menu:active {
+    background-color: #2c2c34;
+}
+
+/* halaman job */
+/* mengatur posisi di css */
+/* static, relative, absolut, fixed */
+
+/* static: default;
+relative: relative terhadap parent element;
+absolute: hilang dari flow html, posisi masih relative terhadap parent element;
+fixed: seperti absolut, tapi posisi relative terhadap browser. Tidak ikut terscroll; */
+/* 
+#nav_relative {
+    position: absolute;
+    top: 70px;
+    left: 300px;
+}
+
+#parent_h1 {
+    position: relative;
+    top: 300px;
+}
+ */
+/* posisi absolut masih bergantung pada parent element,
+sehingga saat parent element berubah, posisi absolut juga ikut
+berubah menyesuaikan perubahan parent nya */
+/* 
+#job_header1 {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+#parent_h2 {
+    position: relative;
+    top: 1000px;
+}
+ */
+/* sedangkan posisi fixed bergantung pada jendela browser,
+sehingga perubahan posisi apapun yang dilakukan pada parent
+element tidak mempengaruhi posisi fixed */
+/* 
+#job_header2 {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+table {
+    position: fixed;
+    color: #978897;
+    background-color: #f1f7ed;
+    z-index: -1;
+}
+*/
+
+
+/* belajar float */
+table {
+    float: right;
+    margin-left: 20px;
+}
+
+#anti_float {
+    clear: both;
+}
+
+ul, ol, dl {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 33%;
+}
+
+#copy {
+    clear: both;
+    text-align: center;
+}
+
+/* halaman contact */
+/* belajar advanced selector */
+
+/* menggunakan koma (,) untuk memilih beberapa elemen */
+h1, h2 {
+    color: #54494b;
+}
+
+/* a b, artinya setiap b yang memiliki parent a (bisa parent langsung,
+    maupun grandparent, dst.) */
+div a {
+    background-color: red;
+}
+
+/* a > b, artinya setiap b yang memiliki parent langsung a (parent tepat di atasnya) */
+
+div > a {
+    background-color: aqua;
+}
+
+/* a + b, artinya setiap b yang tepat berada di bawah
+    alias tepat setelah a dalam parent yang sama(sibling) */
+p + div {
+    background-color: yellow;
+}
+
+/* a ~ b, artinya setiap b yang berada di bawah a dalam parent yang sama */
+div ~ p {
+    background-color: green;
+}
+
+/* 
+HOVER
+Keadaan di mana mouse/kursor berada di atas element tertentu
+1. Efek pada diri sendiri
+2. Efek pada element lain menggunakan advanced selector
+*/
+
+h1:hover {
+    background-color: #2c2c34;
+    color: #978897;
+}
+
+h1:hover + h2 {
+    background-color: #978897;
+    color: #2c2c34;
+}
+
+/* 
+FOCUS
+Keadaan saat sebuah element menjadi focus atau di klik.
+Lebih terlihat efeknya pada input text
+*/
+
+input:focus, textarea:focus {
+    background-color: #2c2c34;
+    color: #f1f7ed;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS 3</title>
+
+    <style>
+      div {
+        width: 100px; height: 100px; margin: 50px;
+      }
+      #div1 {
+        /* perspective ditulis di element parent, jadi seakan2 parent element sebagai
+        jendela atau kamera kita untuk melihat objek yang mana merupakan child elemennya */
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+      }
+      #child1 {
+        background-color: red;
+        /* rotateX merupakan 3d transform, tanpa adanya properti perspective pada parent
+        elemennya, properti ini tidak akan memberi efek. */
+        transform: rotateX(60deg);
+      }
+      #div2 {
+        perspective: 50px;
+        perspective-origin: right center;
+      }
+      #child2 {
+        background-color: blue;
+        transform: rotateY(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Perspective</h1>
+    <div id="div1">
+      <div id="child1"></div>
+    </div>
+    <div id="div2">
+      <div id="child2"></div>
+    </div>
+  </body>
+</html>
